@@ -57,4 +57,5 @@ Thats it!
 ## ![](doc/img/icon_links.png) Links
 
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-6.0&tabs=visual-studio-code#xml-comments  
-https://dev.to/pdelcogliano/improve-your-web-api-with-swagger-documentation-1j83
+https://dev.to/pdelcogliano/improve-your-web-api-with-swagger-documentation-1j83  
+https://code-maze.com/swagger-ui-asp-net-core-web-api/

@@ -16,7 +16,18 @@ namespace APIDesign.Controllers
         [HttpGet]
         public ActionResult<string> NazevMetodyJeJednoJakSeJmenujeMusiBytUnikatniVRamciTohotoControlleru()
         {
-            return Ok("Hello world");
+            return Ok("Hello world!");
+        }
+        
+        /// <summary>
+        /// Testovaci komentar metody
+        /// </summary>
+        /// <param name="message">Komentar parameteru metody</param>
+        /// <returns>Vraci stringovou hodnotu</returns>
+        [HttpGet("helloworld/{message}")]
+        public ActionResult<string> DalsiNazevMetodyJeJednoJakSeJmenujeMusiBytUnikatniVRamciTohotoControlleru(string message)
+        {
+            return Ok(message);
         }
     }
 }
