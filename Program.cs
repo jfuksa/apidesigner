@@ -6,7 +6,7 @@ builder.Services.AddSwaggerGen(options =>
 {
     // add documentation to swagger output
     var xmlCommentFiles = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml", SearchOption.TopDirectoryOnly).ToList();
-    xmlCommentFiles.ForEach(file => opt.IncludeXmlComments(file, true));
+    xmlCommentFiles.ForEach(file => options.IncludeXmlComments(file, true));
 });
 
 
