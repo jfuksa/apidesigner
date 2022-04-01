@@ -48,8 +48,13 @@ Thats it!
 <br/>
 
 ## ![](doc/img/icon_automation.png) Customization
-### Port
+### Swagger port
 ```powershell
-# change the default port on localhost in application.json file
-
+# change the default port on localhost in 'launchSettings.json' file
+"applicationUrl": "https://localhost:8080;http://localhost:8081"
 ```
+
+## ![](doc/img/icon_links.png) Links
+
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-6.0&tabs=visual-studio-code#xml-comments  
+https://dev.to/pdelcogliano/improve-your-web-api-with-swagger-documentation-1j83
