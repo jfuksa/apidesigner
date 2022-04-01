@@ -30,12 +30,11 @@ dotnet run
 
 ### OR
 
-via GUI
+via VSCode GUI
 ```powershell
 # In window menu select 
 File -> Open folder
-
-# click the icon "run project"
+Button 'Run and debug'
 ```
 
 Swagger API is now available on localhost at the url:
