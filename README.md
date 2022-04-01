@@ -39,7 +39,7 @@ File -> Open folder
 ```
 
 Swagger API is now available on localhost at the url:
-> https://localhost:5001/swagger/index.html
+> https://localhost:8080/swagger/index.html
 
 Thats it!
 
