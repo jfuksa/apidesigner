@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIDesign.Controllers
 {
+    /*
     /// <summary>
     /// Komentar contolleru Home
     /// </summary>
@@ -29,5 +30,21 @@ namespace APIDesign.Controllers
         {
             return Ok(message);
         }
+
+        /// <summary>
+        /// Testovaci komentar metody
+        /// </summary>
+        /// <param name="message">Komentar parameteru metody</param>
+        /// <returns>Vraci stringovou hodnotu</returns>
+        [HttpGet("packeta/{message}")]
+        public ActionResult<string> DalsiNazevMetodyJeJednoJakSeJmenujeMusiBytUnikatniVRamciTohotoControlleru2(RobertObjekt uzivatel)
+        {
+            return Ok("ahoj");
+        }
+
+        public class RobertObjekt {
+            public string Jmeno { get; set; }
+        }
     }
+    */
 }
