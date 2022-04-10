@@ -38,7 +38,7 @@ Button 'Run and debug'
 ```
 
 Swagger API is now available on localhost at the url:
-> https://localhost:8080/swagger/index.html
+> https://localhost:9080/swagger/index.html
 
 Thats it!
 
@@ -50,7 +50,7 @@ Thats it!
 ### Swagger port
 ```powershell
 # change the default port on localhost in 'launchSettings.json' file
-"applicationUrl": "https://localhost:8080;http://localhost:8081"
+"applicationUrl": "https://localhost:9080;http://localhost:9081"
 ```
 
 ## ![](doc/img/icon_links.png) Links
