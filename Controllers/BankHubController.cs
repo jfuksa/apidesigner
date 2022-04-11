@@ -64,10 +64,10 @@ namespace APIDesign.Controllers
         /// Robertuv komentar.
         /// </summary>
         /// <returns></returns>
-        [HttpDelete("robert-smaz")]
+        [HttpDelete("robert-smaz/{itemid}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Reponse200SuccessDTO))]
         [ProducesResponseType(StatusCodes.Status429TooManyRequests, Type = typeof(Response429TooManyRequests))]
-        public ActionResult AhojRobertSADFASFARFDFGDFGSDGDF1(RobertDTO robertDto)
+        public ActionResult AhojRobertSADFASFARFDFGDFGSDGDF1(int itemid)
         {
             return Ok();
         }
