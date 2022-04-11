@@ -8,7 +8,7 @@ namespace APIDesign.Controllers
     /// The API is used to obtain information about bank accounts and transactions.
     /// </summary>
     [ApiController]
-    [Route("")]
+    [Route("client/v1")]
     [Produces("application/json")]
     [Consumes("application/json")]
     public class BankHubController : ControllerBase
@@ -47,6 +47,40 @@ namespace APIDesign.Controllers
         {
             return Ok();
         }
+        
+        /// <summary>
+        /// Robertuv komentar.
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost("robert-ahoj")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Reponse200SuccessDTO))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(Response400BadRequestDTO))]
+        public ActionResult AhojRobertSADFASFARFDFGDFGSDGDFG(RobertDTO robertDto)
+        {
+            return Ok();
+        }
+        
+        /// <summary>
+        /// Robertuv komentar.
+        /// </summary>
+        /// <returns></returns>
+        [HttpDelete("robert-smaz")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Reponse200SuccessDTO))]
+        [ProducesResponseType(StatusCodes.Status429TooManyRequests, Type = typeof(Response429TooManyRequests))]
+        public ActionResult AhojRobertSADFASFARFDFGDFGSDGDF1(RobertDTO robertDto)
+        {
+            return Ok();
+        }
+    }
+
+    /// <summary>
+    /// Komentar Robertova objektu
+    /// </summary>
+    public class RobertDTO
+    {
+        public string robertjmeno { get; set; }
+        [Required]
+        public DateTime narozeni { get; set; }
     }
 
     /// <summary>
@@ -91,19 +125,19 @@ namespace APIDesign.Controllers
         ///  Information on whether the account allows domestic payments
         /// </summary>
         /// <example>true/false</example>
-        public string enabledDomesticPayment { get; set; }
+        public bool enabledDomesticPayment { get; set; }
         
         /// <summary>
         ///  Information on whether the account allows SEPA payments
         /// </summary>
         /// <example>true/false</example>
-        public string enabledSepaPayment { get; set; }
+        public bool enabledSepaPayment { get; set; }
         
         /// <summary>
         ///  Information on whether the account allows cross border payments
         /// </summary>
         /// <example>true/false</example>
-        public string enabledCrossBorderPayment { get; set; }
+        public bool enabledCrossBorderPayment { get; set; }
     }
 
     /// <summary>
